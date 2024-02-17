@@ -71,6 +71,12 @@ INSTALLED_APPS = [
 
 ]
 
+REST_FRAMEWORK={
+    'DEFAuLT_PERMISION_CLASSES':[
+        'rest_framework.permissions.DjangoPermissionsOrAnonReadOnly'
+    ]
+}
+
 AUTH_USER_MODEL = 'base.User'
 
 MIDDLEWARE = [
