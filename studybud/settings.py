@@ -67,7 +67,7 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
 
     'rest_framework',
-    "corsheaders",
+    'corsheaders',
 
 ]
 
@@ -182,4 +182,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = [
+    'http://127.0.0.1:3000',
+    'http://localhost:4200',
+    'https://grouppo-app-su5cx.ondigitalocean.app/'
+]
